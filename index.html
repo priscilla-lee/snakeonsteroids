@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<link rel="shortcut icon" href="">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Snake on Steroids</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<link href="http://maxcdn.bootstrapcdn.com/bootswatch/3.3.2/flatly/bootstrap.min.css" rel="stylesheet">
+	<link href="confetti.css" rel="stylesheet">
+</head>
+<body style="padding-top: 50px; background-image: url(swirl_pattern.png)">
+	<section class="rain">
+		<div id="snake" class="col-md-7">
+			<div id="hugcanvas" style="outline: black solid thin;">
+				<canvas id="canvas"></canvas>
+			</div>
+		</div>
+		<div id="scores" class="col-md-1" style="padding-top:75px;">
+			<div style="height:200px; text-align:center"><p id="score0" style="font-size: 500%; color: green; font-weight: bold">0</p></div>
+			<div style="height:200px; text-align:center"><p id="score1" style="font-size: 500%; color: blue; font-weight: bold">0</p></div>
+			<div style="height:200px; text-align:center"><p id="score2" style="font-size: 500%; color: purple; font-weight: bold">0</p></div>
+		</div>
+		<div id="controls" class="col-md-4">
+			<img id="controls0" width="500" height="250" src="controls1.png">
+			<img id="controls1" width="500" height="200" src="controls2.png">
+			<img id="controls2" width="500" height="200" src="controls3.png">
+		</div>
+		<img id="gameover" width="0" height="0" src="gameover.png">
+		<img id="start" width="0" height="0" src="start.png">
+	</section>
+	<script src="snake.js"></script>
+</body>
+</html>
+
